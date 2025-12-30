@@ -1,6 +1,9 @@
 package com.tcs.rewardsApp.service.admin;
 
 import com.tcs.rewardsApp.dto.request.CesUserRequest;
+import com.tcs.rewardsApp.dto.response.UserResponse;
+
+import java.util.List;
 
 public interface AdminService {
 
@@ -8,5 +11,5 @@ public interface AdminService {
 
     void deleteCesUser(Long userId);
 
-    java.util.List<com.tcs.rewardsApp.dto.response.UserResponse> getAllUsers();
+    List<UserResponse> getAllUsers();
 }

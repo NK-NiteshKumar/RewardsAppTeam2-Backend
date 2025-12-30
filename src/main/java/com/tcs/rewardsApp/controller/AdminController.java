@@ -27,8 +27,4 @@ public class AdminController {
         adminService.deleteCesUser(id);
     }
 
-    @GetMapping("/ces-users")
-    public java.util.List<com.tcs.rewardsApp.dto.response.UserResponse> getAllUsers() {
-        return adminService.getAllUsers();
-    }
 }

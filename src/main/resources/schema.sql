@@ -104,10 +104,14 @@ CREATE INDEX idx_tx_status ON transactions(status);
 -- =========================================================
 CREATE TABLE reward_items (
                               id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                              name VARCHAR(100) NOT NULL UNIQUE,
-                              points_cost INT NOT NULL,
-                              category VARCHAR(50) NOT NULL,
-                              active TINYINT(1) NOT NULL
+                              CREATE TABLE reward_items (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    points_cost INT NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    active TINYINT(1) NOT NULL
+);
+
 );
 
 -- =========================================================
